@@ -11,6 +11,8 @@ const Peer = (peer) => {
             <video 
             ref={videoRef}
             autoPlay
+            height={'300px'}
+            width={'300px'}
             muted
             playsInline
             />
