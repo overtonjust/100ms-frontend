@@ -12,8 +12,6 @@ const Peer = (peer) => {
             ref={videoRef}
             autoPlay
             className={`peer-video ${peer.isLocal ? "local" : ""}`}
-            height='300px'
-            width='300px'
             muted
             playsInline
             />
