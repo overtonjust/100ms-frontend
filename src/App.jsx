@@ -3,7 +3,8 @@ import {
   selectIsConnectedToRoom,
   useHMSActions,
   useHMSStore
-} from '@100mslive/react-sdk'
+} from '@100mslive/react-sdk';
+import './App.css'
 import SignIn from './components/SignIn';
 import Conference from './components/Conference';
 import Footer from './components/Footer';
@@ -19,7 +20,7 @@ const App = () => {
   },[hmsActions, isConnected])
 
   return (
-    <div>
+    <div className='App'>
       {isConnected ? (
         <>
           <Conference/>

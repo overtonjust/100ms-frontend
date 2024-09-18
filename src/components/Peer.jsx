@@ -7,16 +7,17 @@ const Peer = (peer) => {
     });
 
     return (
-        <div>
+        <div className='peer-container'>
             <video 
             ref={videoRef}
             autoPlay
+            className={`peer-video ${peer.isLocal ? "local" : ""}`}
             height='300px'
             width='300px'
             muted
             playsInline
             />
-            <div>
+            <div className='peer-name'>
                 {peer.name} {peer.isLocal ? "(You)": ""}
             </div>
         </div>

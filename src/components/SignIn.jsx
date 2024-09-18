@@ -26,8 +26,8 @@ const SignIn = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <h2>Join Meeting</h2>
-            <div>
+            <h2 className='meeting-title'>Join Meeting</h2>
+            <div className='input-container'>
                 <input 
                 required
                 value={inputValues.name}
@@ -38,7 +38,7 @@ const SignIn = () => {
                 placeholder='Your name' 
                 />
             </div>
-            <div>
+            <div className='input-container'>
                 <input 
                 required
                 value={inputValues.token}
@@ -49,7 +49,7 @@ const SignIn = () => {
                 placeholder='Auth token' 
                 />
             </div>
-            <button>Join</button>
+            <button className='btn-signin'>Join</button>
         </form>
     );
 };
