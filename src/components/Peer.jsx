@@ -1,7 +1,7 @@
 import React from 'react';
 import { useVideo } from '@100mslive/react-sdk';
 
-const Peer = (peer) => {
+const Peer = ({ peer }) => {
     console.log(peer)
     
     const { videoRef } = useVideo({
@@ -9,7 +9,7 @@ const Peer = (peer) => {
     });
 
     console.log(videoRef)
-
+    console.log(JSON.stringify(peer, null, 2))
     return (
         <div className='peer-container'>
             <video 
