@@ -5,6 +5,7 @@ import '../App.css'
 const Conference = () => {
     const peers = useHMSStore(selectPeers);
     console.log(peers)
+
     
     return (
         <div className='room-section'>

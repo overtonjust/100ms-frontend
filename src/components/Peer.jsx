@@ -2,6 +2,7 @@ import React from 'react';
 import { useVideo } from '@100mslive/react-sdk';
 
 const Peer = (peer) => {
+    console.log(peer)
     const { videoRef } = useVideo({
         trackId: peer.videoTrack
     });
